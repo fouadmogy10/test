@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Poppins:wght@100;200;300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Poppins:wght@100;200;300;400;500;700;900&display=swap');
+        :root{
+            --main:white;
+        }
+        *{
+            transition: all ease .5s;
+            font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Poppins', sans-serif;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .pad{
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+            .cont{
+                background-image: url(business-main.jpg);
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+                height: 700px;
+                background-attachment: fixed;
+                position: relative;
+            }
+            .over{
+                background: rgba(0,0,0,.1);
+                z-index: 1;
+                width: 100%;
+                height: 700px;
+            }
+            .navbar{
+                display: flex;
+                justify-content: space-between;
+                padding: 30px;
+                border-bottom: 1px solid #e9e8e83b;
+            }
+            .mnue ul li{
+                display: inline-block;
+                color: var(--main);
+                list-style-type: none;
+                padding-left: 10px;
+            }
+            .mnue ul li a{
+                text-decoration: none;
+                color: var(--main);
+                font-family: "Open Sans";
+                text-transform: none;
+                letter-spacing: 0px;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 16px;
+            }
+            .logo img{
+                max-width: 150px;
+                max-height: 150px;
+            }
+            .con{
+                width: 85%;
+                margin: auto;
+            }
+            .info{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+                color: var(--main);
+            }
+            .info h1{
+                font-size: 70px;
+                font-weight: 400;
+            }
+            .info p{
+                font-size: 20px;
+                margin-top: 10px;
+                line-height: 1.86em;
+                margin-bottom: 20px;
+                font-weight: 400;
+            }
+            .btn{
+                padding: 15px 30px  ;
+                margin: 15px;
+                border-radius: 5px;
+                background-color: transparent;
+                cursor: pointer;
+                color: var(--main);
+                border: none;
+                text-transform: uppercase;
+                transition: all .5s;
+            }
+
+            .btn1{
+                background-color: rgb(50, 164, 199);
+            }
+            .btn:hover{
+                color: black;
+                background-color: rgb(228, 228, 228);
+            }
+            .btn2{
+                background-color: var(--main);
+                color: black;
+            }
+            .ani{
+    border: 2px solid rgba(255,255,255,.7);
+    width: 32px;
+    height: 50px;
+    border-radius: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.ani a {
+    text-decoration:none ;
+    background-color: rgb(255, 251, 251);
+    width: 8px;
+    height: 9px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    animation-name: ani;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+transition: all ease-out .5s;}
+@keyframes ani {
+    0%{
+        transform: translateY(3px);
+    } 
+    
+    
+    100%{
+        transform: translateY(30px);
+        opacity: 0;
+    }
+}
+/***********************card*******************/
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .card-item{
+        max-width: 352px;
+        height: inherit;
+        display: flex;
+        margin: 15px;
+    }
+    .icon{
+        width: 15%;
+        height: 100%;
+    }
+    .info2{
+        width: 80%;
+        height: 100%;
+    }
+    .info2 h2{
+        font-size: 17px;
+        color: rgba(12, 12, 12, 0.644);
+    }
+    .info2 p{
+        padding: 10px;
+        font-size: 15px;
+        color: #636363c7; 
+    }
+            .fa{
+                color:#005bd3c7 ;
+            } 
+            /*****************bis**************/   
+            .biss{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-top: 60px;
+                margin-bottom: 60px;
+                
+            }
+            .bis-item{
+                max-width:546px;
+                margin: 10px;
+            }
+            .bis-item img{
+                width: 100%;
+                border-radius: 10px;
+                box-shadow: 5px 17px 20px 5px #a7a7a7;
+            }
+            .bis-item h2{
+                font-family: "Roboto";
+    font-weight:700;
+    font-size: 28px;
+    color: #303030;
+    line-height: 1.38em;
+
+            }
+            .bis-item p{
+                line-height: 1.86em;
+                color: #7c7c7c;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                font-size: 14px;
+            }
+            .icon2 .fa{
+                padding-right: 20px;
+                color: rgb(0, 75, 238);
+            }
+            .bis-item .btn1:hover{
+                background-color: rgba(0, 0, 0, 0.74);
+                color: var(--main);
+            }
+            /**************service**************/
+            .tit .fa{
+                color: rgb(23, 66, 255);
+            }
+            .tit{
+                text-align: center;
+            }
+            .tit h2{
+                font-family: "Roboto";
+    font-weight:700;
+    font-size: 28px;
+    color: #303030;
+    line-height: 1.38em;
+    margin-top: 5px;
+
+            }
+            .tit p{
+                line-height: 1.86em;
+                color: #7c7c7c;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                font-size: 16px;
+            }
+            .ser-cards{
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+            .ser-item{
+                max-width:256px;
+                text-align: center;
+            }
+            .ser-item h2{
+                font-family: "Roboto";
+    font-weight:700;
+    font-size: 20px;
+    color: #303030;
+    line-height: 1.38em;
+    margin-top: 5px;
+
+            }
+            .ser-item p{
+                line-height: 1.86em;
+                color: #7c7c7c;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                font-size: 14px;
+            }
+            .ser-item .fa{
+                background-color:#4274b7;
+                color: var(--main);
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+    font-size: 26px;
+    text-align: center;
+    
+            }
+            .bg{
+                background-color: #f8f8f9;
+            }
+            /******************overlay**********/
+            .overlay{
+                background-image: url(IMG/business-main.jpg);
+                width: 100%;
+                max-height: 560px;
+                position: relative;
+                background-size: cover;
+                position: relative;
+            }
+            .overlay .over{
+                background-color:  #4274b7;
+                z-index: 1;
+                opacity: .7;
+                max-height: 560px;
+            }
+            
+            .txt{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+                
+            }
+            .txt p{
+                color: var(--main);
+                font-size: 18px;
+                line-height: 1.7rem;
+            }
+            .txt p .fa{
+                color: var(--main);
+                padding: 5px;
+            }
+            .overlay .over .fa{
+                color: var(--main);
+                margin: 10px;
+            }
+            .overlay .over h3{
+                color: var(--main);
+                padding-top: 20px;
+            }
+            .overlay .over button{
+                background-color: transparent;
+                border-radius: 50%;
+                margin-top: 60px;
+                border:1px solid var(--main) ;
+                cursor: pointer;
+                transition: all ease-in-out .5s;
+            }
+            .overlay .over button:hover{
+                filter: invert();
+            }
+            /*********sprte icon****************/
+            .srite{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                padding-top: 100px;
+                padding-bottom: 100px;
+                
+            }
+            .srite img{
+                max-width: 150px;
+                opacity: .5;
+                margin: 20px;
+                transition: all ease .5s;
+            }
+            .srite img:hover{
+                opacity: 1;
+
+            }
+            /***********us*************/
+            .withus{
+                display: flex;
+                height: 343px;
+                width: 100%;
+                background-color: #f0f0f0;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+            .withus p{
+                padding-top: 20px ;
+                padding-bottom: 20px;
+                color: #7c7c7c;
+                font-size: 18px;
+            }
+            .withus h2{
+                color: #303030;
+                font-size: 32px;
+            }
+            /*********footer**********/
+            .footer h4{
+                color: var(--main);
+                font-weight: 500;
+                padding-bottom: 20px;
+                text-transform: none;
+    letter-spacing: 0px;
+    font-size: 17px;
+    opacity: 1;
+    visibility: visible;
+            }
+            .footer{
+                color: #58606b;
+                background-color: #162231;
+                padding-top:40px ;
+                padding-bottom: 40px;
+                
+            }
+            .footer-item{
+                display: flex;
+                flex-wrap: wrap;
+                width: 90%;
+                margin: auto;
+            }
+            .foot-item{
+                flex: 1;
+                margin: 20px;
+            }
+            .foot-item ul{
+                list-style-type: none;
+                
+            }
+            .foot-item ul li{
+                font-size: 14px;
+                padding: 10px;
+            }
+            .footer-item .fa{
+                padding-right:7px ;
+                font-size: 14px;
+            }
+            .foot-item p{
+                font-size: 14px;
+                line-height: 1.3rem;
+            }
+            .foot-item ul li{
+                font-size: 15px;
+                line-height: 1.2rem;
+        
+            }
+            .footer2{
+                background-color: #121b25; 
+                display: flex;
+                justify-content: space-between;
+                padding-left: 5%;
+                padding-right: 5%;
+                color: #58606b;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            .footer2 button{
+                background-color: #0e151d;;
+                border: 1px solid transparent;
+                border-radius: 50%;
+                transition: all ease-in-out .5s;
+                
+            }
+            .footer2 button .fa{
+                padding: 7px;
+            }
+            .footer2 .fa1:hover {
+                background-color: rgb(31, 31, 255);
+            }
+            .footer2 .fa2:hover {
+                background-color: rgb(255, 31, 188);
+            }
+            .footer2 .fa3:hover {
+                background-color: rgb(255, 31, 31);
+            }
+            .footer2 .fa4:hover {
+                background-color: rgb(31, 136, 255);
+            }
+            .footer2 button:hover .fa{
+                color: var(--main);
+            }
+            /******************media******************/
+            @media (min-width:320px) and (max-width: 480px){
+                .cont{
+                    font-size: 10px;
+                }
+            }
+            @media (max-width: 700px) {
+
+                .cont .over .info h1{
+                    font-size: 25px;
+                    font-weight: 700; 
+                    line-height: 3rem;
+                }
+                .cont .over .info P{
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+                /* .cont .over .info {
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 1rem;
+                } */
+                .cont .over .info button{
+                    
+                    padding: 10px;
+                    font-weight: 500;
+                }
+                .cont{
+                    height: 800px;
+                }
+                .cont .over{
+                    height: 800px;
+                }
+                .cont .ani {
+                top: 90%;
+                } 
+                *{
+                font-size: small;
+                line-height: 1.7rem;
+            }
+            }
+            
+
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="over">
+        <nav class="navbar con">
+            <div class="logo">
+                <img src="logo-light.png" alt="">
+            </div>
+            <div class="mnue">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">service</a></li>
+                    <li><a href="#">priceing</a></li>
+                    <li><a href="#">news</a></li>
+                    <li><a href="#">contact</a></li></ul>
+            </div>
+        </nav>
+        <div class="info">
+        <h1>Engage Business</h1>
+        <p>Our small and medium business solutions helped grow over hundred of companies. It's time for your firm to shine.</p>
+        <button class="btn btn1">learn more</button>
+        <button class="btn btn2">ouer service</button>
+    </div>
+    <div class="ani">
+        <a></a>
+    </div>
+    </div>
+    
+    
+</div>
+<div class="cards con ">
+    <div class="card-item">
+        <div class="icon">
+            <i class="fa fa-key fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="info2">
+            <h2>Private Solutions</h2>
+            <p>Morbi pellentesque, nisl id semper bibendum, nibh sem fermentum magna, eget commodo.</p>
+        </div>
+    </div>
+    <div class="card-item">
+        <div class="icon">
+            <i class="fa fa-thumbs-up fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="info2">
+            <h2>Small Business Discounts</h2>
+            <p>Morbi pellentesque, nisl id semper bibendum, nibh sem fermentum magna, eget commodo.</p>
+        </div>
+    </div>
+    <div class="card-item">
+        <div class="icon">
+            <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="info2">
+            <h2>Satisfied Clients</h2>
+            <p>Morbi pellentesque, nisl id semper bibendum, nibh sem fermentum magna, eget commodo.</p>
+        </div>
+    </div>
+    <div class="card-item">
+        <div class="icon">
+            <i class="fa fa-key fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="info2">
+            <h2>Private Solutions</h2>
+            <p>Morbi pellentesque, nisl id semper bibendum, nibh sem fermentum magna, eget commodo.</p>
+        </div>
+    </div>
+    <div class="card-item">
+        <div class="icon">
+            <i class="fa fa-thumbs-up fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="info2">
+            <h2>Small Business Discounts</h2>
+            <p>Morbi pellentesque, nisl id semper bibendum, nibh sem fermentum magna, eget commodo.</p>
+        </div>
+    </div>
+    <div class="card-item">
+        <div class="icon">
+            <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="info2">
+            <h2>Satisfied Clients</h2>
+            <p>Morbi pellentesque, nisl id semper bibendum, nibh sem fermentum magna, eget commodo.</p>
+        </div>
+    </div>
+</div>
+<div class="biss con">
+    <div class="bis-item">
+        <h2>Our Secret</h2>
+        <p>Morbi pellentesque, nisl id semper bibendum, nibh sem fermentum magna, eget commodo leo velit sit amet velit. Aliquam fermentum, lorem quis posuere mattis, est justo porttitor magna, in commodo risus justo vitae nibh. Quisque consequat venenatis rutrum.</p>
+        <div class="icon2">
+        <p><i class="fa fa-hand-o-right fa-lg" aria-hidden="true"></i>Aliquam fermentum lorem quis posuere mattis.</p>
+        <p><i class="fa fa-hand-o-right fa-lg" aria-hidden="true"></i>Sed mollis sapien erat id pellentesque libero.</p>
+        <p><i class="fa fa-hand-o-right fa-lg" aria-hidden="true"></i>Pellentesque nisl id semper bibendum.</p>
+        <button class="btn btn1">LEARN MORE</button>
+    </div>
+</div>
+    <div class="bis-item">
+        <img src="IMG/photodune-5828547-700x680.jpg" alt="">
+    </div>
+    
+</div>
+<div class="bg">
+<div class="ser con pad">
+    <div class="tit ">
+        <i class="fa fa-star-o fa-3x" aria-hidden="true"></i>
+        <h2>Our Services</h2>
+        <p>Learn more about our great services.</p>
+    </div>
+    <div class="ser-cards">
+        <div class="ser-item">
+            <i class="fa fa-desktop fa-2x" aria-hidden="true"></i>
+            <h2>Powerful Options</h2>
+            <p>Take a full control over all aspects of your theme with our truly extensive Options Panel.</p>
+            </div>
+            <div class="ser-item">
+                <i class="fa fa-pencil fa-2x" aria-hidden="true"></i>
+                <h2>Responsive Design</h2>
+                <p>Engage is a fully responsive and retina ready theme that scales well to all mobile devices.</p>
+                </div>
+                <div class="ser-item">
+                    <i class="fa fa-diamond fa-2x" aria-hidden="true"></i>
+                    <h2>Page Builder
+                    </h2>
+                    <p>Build any layout you can think of with the most powerful page builder Visual Composer.</p>
+                    </div>
+                    <div class="ser-item">
+                        <i class="fa fa-microphone fa-2x" aria-hidden="true"></i>
+                        <h2>Styling Options</h2>
+                        <p>Adjust the looks of your theme with the extensive Styling panel. Possibilities are endless.</p>
+                        </div>
+                        <div class="ser-item">
+                            <i class="fa fa-comment-o fa-2x" aria-hidden="true"></i>
+                            <h2>Demo Content</h2>
+                            <p>All of presented layouts and theme demo pages are available with a single mouse click.</p>
+                            </div>
+                            <div class="ser-item">
+                                <i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>
+                                <h2>Free Support</h2>
+                                <p>Our top-notch support team will be more than happy to answer any of your questions.</p>
+                                </div>
+                                <div class="ser-item">
+                                    <i class="fa fa-birthday-cake fa-2x" aria-hidden="true"></i>
+                                    <h2>Documentation</h2>
+                                    <p>Everything you need to know about the theme is located in the extensive documentation.</p>
+                                    </div>
+                                    <div class="ser-item">
+                                        <i class="fa fa-camera-retro fa-2x" aria-hidden="true"></i>
+                                        <h2>Premium Sliders</h2>
+                                        <p>Engage comes with two most powerful sliders out there: Revolution Slider and Layer Slider.</p>
+                                        </div>
+    </div>
+</div>
+</div>
+    <div class="overlay">
+        <div class="over">
+            <div class="txt">
+            <i class="fa1 fa fa-comment-o fa-3x" aria-hidden="true"></i>
+            <p><i class="fa fa-quote-left" aria-hidden="true"></i>Per seacula quarta decima et quinta decima. Modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum quarta decima. Lorem ipsum dolorum have a great day.<i class="fa fa-quote-right" aria-hidden="true"></i></p>
+            <h3>Steve Morris</h3>    
+            <p>FashionTop</p>
+            <button><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></button>
+            <button><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+        </div>
+    </div>
+    </div>
+    <div class="srite con pad">
+        <img src="IMG/logo_01.png" alt="">
+        <img src="IMG/logo_02.png" alt="">
+        <img src="IMG/logo_03.png" alt="">
+        <img src="IMG/logo_04.png" alt="">
+        <img src="IMG/logo_05.png" alt="">
+        <img src="IMG/logo_06.png" alt="">
+        
+    </div>
+    <div class="withus">
+        <div class="item">
+            <h2>Want to work with us?</h2>
+            <p>Feel free to contact us and get a free quote!</p>
+            <button class="btn1 btn">Buy Engage Now!</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-item">
+            <div class="foot-item">
+                <h4>About us</h4>
+                <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur. I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
+            <div class="foot-item">
+                <h4>Opening Hours</h4>
+                <ul class="ul1">
+                    <li><i class="fa fa-arrow-right fa-sm"></i>Mon-Thu: 8:00 - 17:00</li>
+                    <li><i class="fa fa-arrow-right fa-sm"></i>Fri: 8:00 - 19:00</li>
+                    <li><i class="fa fa-arrow-right fa-sm"></i>Sat: 11:00 - 14:00</li>
+                    <li><i class="fa fa-arrow-right fa-sm"></i>Sun: Closed</li>
+                </ul>
+            </div>
+            <div class="foot-item">
+                <h4>Pages</h4>
+                <ul class="ul2">
+                    <li><i class="fa fa-arrow-right fa-sm"></i><a href="#"></a>About</li>
+                    <li><i class="fa fa-arrow-right fa-sm"></i><a href="#"></a>Services</li>
+                    <li><i class="fa fa-arrow-right fa-sm"></i><a href="#"></a>News</li>
+                    <li><i class="fa fa-arrow-right fa-sm"></i><a href="#"></a>Contact</li>
+                </ul>
+            </div>
+            <div class="foot-item">
+                
+                <h4>Contact Details</h4>
+                <ul class="ul3">
+                    
+                    
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i>Manchester Road 123-78B, Silictown 7854MD, Great Country</li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>+46 123 456 789</li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i>hello@sitename.com</li>
+                </ul>
+            
+            </div>
+        </div>
+    </footer>
+    <footer class="footer2">
+        <div><p>Copyright 2022. All rights reserved.</p></div>
+        <div><button class="fa1"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+            <button class="fa2"><i class="fa fa-instagram" aria-hidden="true"></i></button>
+            <button class="fa3"><i class="fa fa-youtube" aria-hidden="true"></i></button>
+            <button class="fa4"><i class="fa fa-linkedin" aria-hidden="true"></i></button>
+        </div>
+    </footer>
+</body>
+</html>
